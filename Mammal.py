@@ -1,6 +1,7 @@
 # parent class
 class Mammal:
 
+    head = 1
     legs = 4
     feeds_milk = True
     has_fur = True
