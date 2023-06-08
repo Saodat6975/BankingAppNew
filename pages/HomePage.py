@@ -13,5 +13,4 @@ class HomePage(BasePage):
 
     def get_side_menus(self):
         side_menus = self.driver.find_elements(By.CSS_SELECTOR, 'label.aside__label')
-        logger.info('Checking if side menus has no difference')
         return {menu.text.lower() for menu in side_menus}
