@@ -25,4 +25,3 @@ def test_account_selection(driver, account_number):
     
     displayed_account_number = driver.find_element(By.XPATH, "//span[text()='Account number']/following-sibling::span[1]").text
     assert displayed_account_number == account_number
-
